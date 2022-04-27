@@ -6,6 +6,7 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
+        backgroundColor: colors.back,
     },
     title: {
         fontSize: 20,
@@ -20,6 +21,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         borderWidth: 1,
         borderColor: colors.black,
+        borderRadius: 50,
     },
     icon: {
         fontSize: 24,
@@ -29,7 +31,8 @@ const styles = StyleSheet.create({
     input: {
         fontSize: 18,
         padding: 10,
-        width: '80%'
+        width: '80%',
+
     }
 })
 
