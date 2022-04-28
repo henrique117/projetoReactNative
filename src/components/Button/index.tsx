@@ -9,14 +9,23 @@ export default function Button({onPress, title, type, ...rest}:ButtonProps) {
             style={
                 type == 'ciano'
                     ? styles.buttonCiano
-                    : type == 'white'
-                    ? styles.buttonBlack
-                    : styles.buttonWhite
+                    : type == 'logcad'
+                    ? styles.buttonLogcad
+                    : styles.buttonDown
             }
             onPress={onPress}
             {...rest}
         >
-            <Text style={styles.text}>{title}</Text>
+            <Text 
+                style={
+                    type == 'logcad'
+                        ? styles.textLogcad
+                        : type == 'down'
+                        ? styles.textDown
+                        : styles.text
+                }>
+                    {title}                
+            </Text>
         </TouchableOpacity>
     )
 }
