@@ -13,6 +13,8 @@ export default function Button({onPress, title, type, ...rest}:ButtonProps) {
                     ? styles.buttonLogcad
                     :type == 'cad'
                     ? styles.buttonLogcad
+                    :type == 'padraoBlue'
+                    ? styles.botaoPadrao
                     : styles.buttonDown
             }
             onPress={onPress}

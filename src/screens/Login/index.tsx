@@ -18,7 +18,7 @@ export default function Login({ navigation }: LoginTypes) {
     return (
         <View style={styles.container}>
             <KeyboardAvoidingView>
-                <View style={styles.loginButton}>
+                <View>
                     <Button title="Login" type="log" onPress={handleSignIn} />
                 </View>
                 <View style={styles.generalView}>

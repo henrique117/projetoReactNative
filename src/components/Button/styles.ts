@@ -17,6 +17,11 @@ const styles = StyleSheet.create({
       borderRadius: 5,
       margin: 10
     },
+    botaoPadrao: {
+      backgroundColor: colors.botaoAzul,
+      borderRadius: 5,
+      margin: 10
+    },
     text: {
       color: colors.white,
       fontWeight: 'bold',

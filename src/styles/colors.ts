@@ -5,5 +5,6 @@ export default {
     back: '#fffff2',
     backGreen: '#93dddc',
     backDarkGreen: '#143c3c',
-    iconColor: '#666666'
+    iconColor: '#666666',
+    botaoAzul: '#BFFFFE'
 }
