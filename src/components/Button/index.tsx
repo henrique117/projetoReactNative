@@ -9,7 +9,9 @@ export default function Button({onPress, title, type, ...rest}:ButtonProps) {
             style={
                 type == 'ciano'
                     ? styles.buttonCiano
-                    : type == 'logcad'
+                    : type == 'log'
+                    ? styles.buttonLogcad
+                    :type == 'cad'
                     ? styles.buttonLogcad
                     : styles.buttonDown
             }
@@ -18,8 +20,10 @@ export default function Button({onPress, title, type, ...rest}:ButtonProps) {
         >
             <Text 
                 style={
-                    type == 'logcad'
-                        ? styles.textLogcad
+                    type == 'log'
+                        ? styles.textLog
+                        : type == 'cad'
+                        ? styles.textCad
                         : type == 'down'
                         ? styles.textDown
                         : styles.text

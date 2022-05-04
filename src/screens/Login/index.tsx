@@ -19,7 +19,7 @@ export default function Login({ navigation }: LoginTypes) {
         <View style={styles.container}>
             <KeyboardAvoidingView>
                 <View style={styles.loginButton}>
-                    <Button title="Login" type="logcad" onPress={handleSignIn} />
+                    <Button title="Login" type="log" onPress={handleSignIn} />
                 </View>
                 <View style={styles.generalView}>
                     <View style={styles.formRow}>

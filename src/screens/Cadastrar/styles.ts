@@ -5,33 +5,36 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'center',
-        justifyContent: 'center',
         backgroundColor: colors.back,
     },
-    title: {
-        fontSize: 20,
-        fontWeight: 'bold',
-        textAlign: 'center',
-        color: colors.black,
-        marginBottom: 20,
+    generalView: {
+        flex: 1,
+        alignItems: 'center',
     },
     formRow: {
-        margin: 10,
+        margin: 30,
         flexDirection: 'row',
         alignItems: 'center',
-        borderWidth: 1,
-        borderColor: colors.black,
+        borderWidth: 2,
+        borderColor: colors.backDarkGreen,
+        borderRadius: 50,
+        backgroundColor: colors.white,
+        elevation: 10,
     },
     icon: {
         fontSize: 24,
-        color: colors.ciano,
+        color: colors.iconColor,
         padding: 10,
     },
     input: {
         fontSize: 18,
         padding: 10,
-        width: '80%'
-    }
+        width: '70%',
+    },
+    loginButton: {
+        marginTop: 140,
+        paddingBottom: 70
+    },
 })
 
 export default styles

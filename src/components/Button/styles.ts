@@ -25,11 +25,18 @@ const styles = StyleSheet.create({
       fontSize: 18
     },
 
-    textLogcad: {
+    textLog: {
       color: colors.backDarkGreen,
       textAlign: 'center',
       fontWeight: 'bold',
       fontSize: 84,
+    },
+
+    textCad: {
+      color: colors.backDarkGreen,
+      textAlign: 'center',
+      fontWeight: 'bold',
+      fontSize: 70,
     },
 
     textDown: {

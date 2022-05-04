@@ -1,5 +1,5 @@
 export interface ButtonProps {
     onPress: () => void
     title: string
-    type: 'down' | 'logcad' | 'ciano'
+    type: 'down' | 'log' | 'ciano' | 'cad'
 }
