@@ -5,11 +5,13 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'center',
+        justifyContent: 'center',
         backgroundColor: colors.back,
     },
     generalView: {
-        flex: 1,
         alignItems: 'center',
+        justifyContent: 'center',
+        marginTop: 20,
     },
     formRow: {
         margin: 30,
@@ -30,10 +32,6 @@ const styles = StyleSheet.create({
         fontSize: 18,
         padding: 10,
         width: '70%',
-    },
-    loginButton: {
-        marginTop: 140,
-        paddingBottom: 70
     },
 })
 

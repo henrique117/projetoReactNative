@@ -19,9 +19,14 @@ const styles = StyleSheet.create({
     },
     botaoPadrao: {
       backgroundColor: colors.botaoAzul,
-      borderRadius: 5,
-      margin: 10
+      borderRadius: 50,
+      margin: 10,
+      paddingHorizontal: 50,
+      borderWidth: 1.5,
+      borderColor: colors.backDarkGreen,
+      elevation: 7,
     },
+
     text: {
       color: colors.white,
       fontWeight: 'bold',
@@ -49,7 +54,14 @@ const styles = StyleSheet.create({
       textAlign: 'center',
       fontWeight: 'bold',
       fontSize: 14,
-    }
+    },
+
+    textPadrao: {
+      color: colors.backDarkGreen,
+      textAlign: 'center',
+      fontWeight: 'bold',
+      fontSize: 36,
+    },
   })
   
   export default styles

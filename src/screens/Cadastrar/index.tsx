@@ -18,7 +18,7 @@ export default function Cadastrar({ navigation }: LoginTypes) {
     return (
         <View style={styles.container}>
             <KeyboardAvoidingView>
-                <View style={styles.loginButton}>
+                <View>
                     <Button title="Cadastrar" type="cad" onPress={handleSignIn} />
                 </View>
                 <View style={styles.generalView}>

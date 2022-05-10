@@ -1,6 +1,7 @@
 import React from 'react'
 import { TouchableOpacity, Text } from 'react-native'
 import { ButtonProps } from '../../interfaces/Button.interface'
+import colors from '../../styles/colors'
 import styles from './styles'
 
 export default function Button({onPress, title, type, ...rest}:ButtonProps) {
@@ -28,6 +29,8 @@ export default function Button({onPress, title, type, ...rest}:ButtonProps) {
                         ? styles.textCad
                         : type == 'down'
                         ? styles.textDown
+                        : type == 'padraoBlue'
+                        ? styles.textPadrao
                         : styles.text
                 }>
                     {title}                
