@@ -35,7 +35,7 @@ export default function Perfil({ navigation }: LoginTypes) {
       </View>
       <View style={styles.generalView}>
         <Button title="Salvar" type="padraoBlue" onPress={() => console.log("Salvar")} />
-        <Button title="Sair" type="padraoBlue" onPress={() => console.log("Sair")} />
+        <Button title="Sair" type="padraoBlue" onPress={() => navigation.navigate('Login')} />
       </View>
     </View>
   )
