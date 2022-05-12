@@ -8,11 +8,11 @@ import { LoginTypes } from '../../types/Screen.types';
 export default function Login({ navigation }: LoginTypes) {
 
     async function handleSignIn() {
-        navigation.navigate("Tab");
+        navigation.navigate("Home");
     }
 
     function handleCadastrar() {
-        navigation.navigate("Cadastrar");
+        navigation.navigate("Perfil");
     }
 
     return (

@@ -14,8 +14,6 @@ const styles = StyleSheet.create({
   },
 
   icon: {
-    color: colors.botaoAzul,
-    fontSize: 30,
     marginBottom: 10,
     marginLeft: 20
   },

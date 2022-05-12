@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
       color: colors.backDarkGreen,
       textAlign: 'center',
       fontWeight: 'bold',
-      fontSize: 36,
+      fontSize: 32,
     },
   })
   
