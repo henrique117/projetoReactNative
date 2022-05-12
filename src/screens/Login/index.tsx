@@ -12,7 +12,7 @@ export default function Login({ navigation }: LoginTypes) {
     }
 
     function handleCadastrar() {
-        navigation.navigate("Perfil");
+        navigation.navigate("Cadastrar");
     }
 
     return (

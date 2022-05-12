@@ -10,7 +10,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 export default function Perfil({ navigation }: LoginTypes) {
 
   async function handleHome() {
-    console.log("Home")
+    navigation.navigate("Home")
   }
 
   async function handlePerfil() {
@@ -18,18 +18,14 @@ export default function Perfil({ navigation }: LoginTypes) {
   }
 
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <View style={{ 
         backgroundColor: colors.backDarkGreen,
         width: '100%',
-        paddingTop: 120,
-        flexDirection: 'row',
+        paddingTop: 140,
       }}>
         <View style={styles.icon}>
           <IconButton onPress={handleHome} type='home'></IconButton>
-        </View>
-        <View style={styles.icon}>
-          <IconButton onPress={handlePerfil} type='perfil'></IconButton>
         </View>
       </View>
       <Text style={styles.textoTitle}>PERFIL</Text>
@@ -41,6 +37,6 @@ export default function Perfil({ navigation }: LoginTypes) {
         <Button title="Salvar" type="padraoBlue" onPress={() => console.log("Salvar")} />
         <Button title="Sair" type="padraoBlue" onPress={() => console.log("Sair")} />
       </View>
-    </SafeAreaView>
+    </View>
   )
 }

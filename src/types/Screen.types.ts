@@ -7,6 +7,7 @@ export type LoginStackParamList = {
   Perfil: undefined;
   Home: undefined;
 }
+
 type LoginScreenNavigationProp = StackNavigationProp<LoginStackParamList, 'Login'>
 export type LoginTypes = {
   navigation: LoginScreenNavigationProp

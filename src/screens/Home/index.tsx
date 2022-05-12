@@ -4,8 +4,9 @@ import styles from "./styles";
 import Button from "../../components/Button";
 import { Entypo, Ionicons } from "@expo/vector-icons"
 import colors from "../../styles/colors";
+import { LoginTypes } from "../../types/Screen.types";
  
-export default function Home() {
+export default function Home({ navigation }: LoginTypes) {
   return (
     <View style={styles.container}>
       <View style={{ 
@@ -23,8 +24,8 @@ export default function Home() {
         <Text style={styles.texto}>O QUE VOCÊ PRETENDE FAZER?</Text>
       </ImageBackground>
       <View style={styles.generalView}>
-        <Button title="CURIOSIDADES" type="padraoBlue" onPress={() => console.log("Salvar")} />
-        <Button title="DAR IDEIAS" type="padraoBlue" onPress={() => console.log("Sair")} />
+        <Button title="CURIOSIDADES" type="padraoBlue" onPress={() => console.log("Curiosidades")} />
+        <Button title="PERFIL" type="padraoBlue" onPress={() => navigation.navigate('Perfil')} />
       </View>
     </View>
   );
