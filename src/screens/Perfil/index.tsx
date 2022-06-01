@@ -5,7 +5,6 @@ import Button from "../../components/Button";
 import colors from "../../styles/colors";
 import IconButton from "../../components/IconButton";
 import { LoginTypes } from "../../types/Screen.types";
-import { SafeAreaView } from "react-native-safe-area-context";
  
 export default function Perfil({ navigation }: LoginTypes) {
 
@@ -13,8 +12,8 @@ export default function Perfil({ navigation }: LoginTypes) {
     navigation.navigate("Home")
   }
 
-  async function handlePerfil() {
-    navigation.navigate("Perfil")
+  async function handleTest() {
+    navigation.navigate("Test")
   }
 
   return (
@@ -34,7 +33,7 @@ export default function Perfil({ navigation }: LoginTypes) {
         <Text style={[styles.texto, styles.backTexto]}>Henrique</Text>
       </View>
       <View style={styles.generalView}>
-        <Button title="Salvar" type="padraoBlue" onPress={() => console.log("Salvar")} />
+        <Button title="Testes" type="padraoBlue" onPress={() => navigation.navigate('Test')} />
         <Button title="Sair" type="padraoBlue" onPress={() => navigation.navigate('Login')} />
         <Button title="Mapa" type="padraoBlue" onPress={() => navigation.navigate('Map')} />
       </View>

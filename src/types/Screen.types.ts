@@ -7,6 +7,7 @@ export type LoginStackParamList = {
   Perfil: undefined;
   Home: undefined;
   Map: undefined;
+  Test: undefined;
 }
 
 type LoginScreenNavigationProp = StackNavigationProp<LoginStackParamList, 'Login'>
