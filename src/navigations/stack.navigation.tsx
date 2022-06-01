@@ -1,0 +1,17 @@
+import React from "react";
+import { createStackNavigator } from "@react-navigation/stack";
+import { PerfilScreen, HomeScreen, MapScreen, TestScreen, SurpriseScreen } from "../screens";
+
+const Stack = createStackNavigator();
+
+export default function StackNavigation() {
+  return (
+    <Stack.Navigator screenOptions={{ headerShown: false}}>
+        <Stack.Screen name="Perfil" component={PerfilScreen} />
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Map" component={MapScreen} />
+        <Stack.Screen name="Test" component={TestScreen} />
+        <Stack.Screen name="Surprise" component={SurpriseScreen} />
+    </Stack.Navigator>
+  );
+}
