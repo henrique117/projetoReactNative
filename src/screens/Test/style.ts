@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
         padding: 20,
     },
     button: {
-        marginTop: 200
+        marginTop: 10
     }
 });
 
