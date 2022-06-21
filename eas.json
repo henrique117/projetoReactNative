@@ -14,7 +14,7 @@
     },
     "preview2": {
       "android": {
-        "gradleCommand": ":app:assembleRelease"
+        "gradleCommand": ":clean:app:assembleRelease"
       }
     },
     "preview3": {
