@@ -53,36 +53,48 @@ export default function Cadastrar({ navigation }: LoginTypes) {
     }, [])
 
     return (
-        <View style={styles.container}>
-            <KeyboardAvoidingView>
-                <View>
-                    <ButtonComp title="Cadastrar" type="cad" onPress={handleRegister} />
+        <>
+            {isLoading ? (
+                <LoadingComp />
+            ) : (
+                <View style={styles.container}>
+                    <KeyboardAvoidingView>
+                        <View>
+                            <ButtonComp title="Cadastrar" type="cad" onPress={handleRegister} />
+                        </View>
+                        <View style={styles.generalView}>
+                            <View style={styles.formRow}>
+                                <Ionicons name="person" style={styles.icon} />
+                                <TextInput 
+                                    style={styles.input} 
+                                    placeholder="Nome" 
+                                    onChangeText={(i) => handleChange({ name: i })} 
+                                />
+                            </View>
+                            <View style={styles.formRow}>
+                                <MaterialCommunityIcons name="email" style={styles.icon} />
+                                <TextInput
+                                    style={styles.input}
+                                    placeholder='Email'
+                                    keyboardType='email-address'
+                                    autoCapitalize='none'
+                                    onChangeText={(i) => handleChange({ email: i })}
+                                />
+                            </View>
+                            <View style={styles.formRow}>
+                                <Entypo name="key" style={styles.icon} />
+                                <TextInput
+                                    style={styles.input}
+                                    placeholder='Senha'
+                                    secureTextEntry={true}
+                                    autoCapitalize='none'
+                                    onChangeText={(i) => handleChange({ password: i })}
+                                />
+                            </View>
+                        </View>
+                        <ButtonComp title="Ja tem uma conta? Faça Login!" type="down" onPress={handleLogin} />
+                    </KeyboardAvoidingView>
                 </View>
-                <View style={styles.generalView}>
-                    <View style={styles.formRow}>
-                        <Ionicons name="person" style={styles.icon} />
-                        <TextInput style={styles.input} placeholder="Nome" />
-                    </View>
-                    <View style={styles.formRow}>
-                        <MaterialCommunityIcons name="email" style={styles.icon} />
-                        <TextInput
-                            style={styles.input}
-                            placeholder='Email'
-                            keyboardType='email-address'
-                            autoCapitalize='none'
-                        />
-                    </View>
-                    <View style={styles.formRow}>
-                        <Entypo name="key" style={styles.icon} />
-                        <TextInput
-                            style={styles.input}
-                            placeholder='Senha'
-                            secureTextEntry={true}
-                            autoCapitalize='none'
-                        />
-                    </View>
-                </View>
-                <ButtonComp title="Ja tem uma conta? Faça Login!" type="down" onPress={handleLogin} />
-            </KeyboardAvoidingView>
-        </View>
+            )}
+        </>
     )}
