@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import { Text, View, TouchableOpacity, ImageBackground, Alert } from "react-native"
+import { Text, View, TouchableOpacity, ImageBackground, Alert, Image } from "react-native"
 import { Camera } from "expo-camera"
 import * as MediaLibrary from "expo-media-library"
 import styles from "./styles"
@@ -87,12 +87,47 @@ export default function Cameras() {
                                 </View>
                             </View>
                         </ImageBackground>
-                    ) ; (
-                        
-                    )
+                    ) : (
+                        <Camera
+                            style={styles.container}
+                            type={type}
+                            ref={(r) => {
+                                if (r) camera = r
+                            }}
+                        >
+                            <View style={styles.buttonTop}>
+                                <View style={styles.buttonTopPosition}>
+                                    <TouchableOpacity onPress={__closeCamera}>
+                                        <Text style={styles.textClose}> X </Text>
+                                    </TouchableOpacity>
+                                </View>
+                                <TouchableOpacity
+                                    style={styles.buttonFlip}
+                                    onPress={() => {
+                                        setType(
+                                            type === Camera.Constants.Type.back
+                                                ? Camera.Constants.Type.front
+                                                : Camera.Constants.Type.back
+                                        )
+                                    }}
+                                >
+                                    <Text style={styles.textFlip}> Inverter </Text>
+                                </TouchableOpacity>
+                                <View style={styles.viewTakePicture}>
+                                    <View style={styles.positionTakePicture}>
+                                        <TouchableOpacity
+                                            onPress={__takePicture}
+                                            style={styles.buttonTakePicture}
+                                        >
+                                            <Image source={require("../../assets/cuteEarth.png")} style={styles.buttonTakePictureImage} />
+                                        </TouchableOpacity>
+                                    </View>
+                                </View>
+                            </View>
+                        </Camera>
+                    )}
                 </View>
-            )
+            )}
         </View>
     )
-
 }

@@ -11,6 +11,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.white,
     justifyContent:"center",
     alignItems: "center",
+    marginBottom: 3
   },
   buttonStartOver: {
     width: 130,
@@ -60,7 +61,7 @@ const styles = StyleSheet.create({
   buttonTopPosition:{
     position:'absolute',
     top:"5%",
-    right:"5%",
+    left:"5%",
   },
   textClose:{
     color:colors.white,
@@ -90,12 +91,16 @@ const styles = StyleSheet.create({
     alignItems:"center",
   },
   buttonTakePicture:{
-    width: 130,
-    height: 40,
-    bottom:0,
-    borderRadius:4,
-    backgroundColor:colors.white,
+    width: 70,
+    height: 70,
+    top: 700,
+    borderRadius: 100,
+    alignItems: "center"
   },
+  buttonTakePictureImage: {
+    width: 90,
+    height: 90,
+  }
 });
 
 export default styles
