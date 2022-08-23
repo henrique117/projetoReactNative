@@ -9,8 +9,16 @@ const styles = StyleSheet.create({
   },
 
   generalView: {
+    flex: 1,
+    flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+
+  generalViewButtons: {
+    width: '50%',
+    alignItems: 'center',
+    justifyContent: 'center'
   },
 
   icon: {

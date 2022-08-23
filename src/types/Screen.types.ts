@@ -9,9 +9,24 @@ export type LoginStackParamList = {
   Map: undefined;
   Test: undefined;
   Surprise: undefined;
+  Arquivo: undefined;
+  Cameras: undefined;
+  Chat: undefined;
+  EnviarMensagem: undefined;
 }
 
 type LoginScreenNavigationProp = StackNavigationProp<LoginStackParamList, 'Login'>
+
 export type LoginTypes = {
   navigation: LoginScreenNavigationProp
+}
+
+export type ChatStackParamList = {
+  Chat: undefined
+  EnviarMensagem: undefined
+}
+type ChatScreenNavigationProp = StackNavigationProp<ChatStackParamList, 'Chat'>
+
+export type ChatTypes = {
+  navigation: ChatScreenNavigationProp
 }

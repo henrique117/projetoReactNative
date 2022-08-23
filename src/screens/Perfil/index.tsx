@@ -12,10 +12,6 @@ export default function Perfil({ navigation }: LoginTypes) {
     navigation.navigate("Home")
   }
 
-  async function handleTest() {
-    navigation.navigate("Test")
-  }
-
   return (
     <View style={styles.container}>
       <View style={{ 
@@ -28,14 +24,23 @@ export default function Perfil({ navigation }: LoginTypes) {
         </View>
       </View>
       <Text style={styles.textoTitle}>PERFIL</Text>
-      <View style={styles.generalView}>
+      <View style={styles.generalViewButtons}>
         <Image style={styles.foto} source={require("../../assets/chopper.png")}></Image>
         <Text style={[styles.texto, styles.backTexto]}>Henrique</Text>
       </View>
       <View style={styles.generalView}>
-        <Button title="Testes" type="padraoBlue" onPress={() => navigation.navigate('Test')} />
-        <Button title="?" type="padraoBlue" onPress={() => navigation.navigate('Surprise')} />
-        <Button title="Camera" type="padraoBlue" onPress={() => navigation.navigate('Camera')} />
+        <View style={styles.generalViewButtons}>
+          <Button title="TE" type="padraoBlue" onPress={() => navigation.navigate('Test')} />
+          <Button title="??" type="padraoBlue" onPress={() => navigation.navigate('Surprise')} />
+          <Button title="CA" type="padraoBlue" onPress={() => navigation.navigate('Camera')} />
+          <Button title="CH" type="padraoBlue" onPress={() => navigation.navigate('Camera')} />
+        </View>
+        <View style={styles.generalViewButtons}>
+          <Button title="MA" type="padraoBlue" onPress={() => navigation.navigate('Map')} />
+          <Button title="AR" type="padraoBlue" onPress={() => navigation.navigate('Arquivo')} />
+          <Button title="EM" type="padraoBlue" onPress={() => navigation.navigate('Camera')} />
+          <Button title="QR" type="padraoBlue" onPress={() => navigation.navigate('Camera')} />
+        </View>
       </View>
     </View>
   )
