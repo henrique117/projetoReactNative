@@ -4,9 +4,9 @@ import styles from "./styles";
 import Button from "../../components/Button";
 import colors from "../../styles/colors";
 import IconButton from "../../components/IconButton";
-import { LoginTypes } from "../../types/Screen.types";
+import { PrincipalTypes } from "../../types/Screen.types";
  
-export default function Perfil({ navigation }: LoginTypes) {
+export default function Perfil({ navigation }: PrincipalTypes) {
 
   async function handleHome() {
     navigation.navigate("Home")
@@ -32,14 +32,14 @@ export default function Perfil({ navigation }: LoginTypes) {
         <View style={styles.generalViewButtons}>
           <Button title="TE" type="padraoBlue" onPress={() => navigation.navigate('Test')} />
           <Button title="??" type="padraoBlue" onPress={() => navigation.navigate('Surprise')} />
+          <Button title="HO" type="padraoBlue" onPress={() => navigation.navigate('Home')} />
           <Button title="CA" type="padraoBlue" onPress={() => navigation.navigate('Camera')} />
-          <Button title="CH" type="padraoBlue" onPress={() => navigation.navigate('Camera')} />
         </View>
         <View style={styles.generalViewButtons}>
           <Button title="MA" type="padraoBlue" onPress={() => navigation.navigate('Map')} />
           <Button title="AR" type="padraoBlue" onPress={() => navigation.navigate('Arquivo')} />
-          <Button title="EM" type="padraoBlue" onPress={() => navigation.navigate('Camera')} />
-          <Button title="QR" type="padraoBlue" onPress={() => navigation.navigate('Camera')} />
+          <Button title="EM" type="padraoBlue" onPress={() => navigation.navigate('EnviarMensagem')} />
+          <Button title="QR" type="padraoBlue" onPress={() => null} />
         </View>
       </View>
     </View>

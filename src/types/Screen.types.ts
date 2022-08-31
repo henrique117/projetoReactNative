@@ -4,15 +4,6 @@ import { StackNavigationProp } from "@react-navigation/stack";
 export type LoginStackParamList = {
   Login: undefined;
   Cadastrar: undefined;
-  Perfil: undefined;
-  Home: undefined;
-  Map: undefined;
-  Test: undefined;
-  Surprise: undefined;
-  Arquivo: undefined;
-  Cameras: undefined;
-  Chat: undefined;
-  EnviarMensagem: undefined;
 }
 
 type LoginScreenNavigationProp = StackNavigationProp<LoginStackParamList, 'Login'>
@@ -30,3 +21,21 @@ type ChatScreenNavigationProp = StackNavigationProp<ChatStackParamList, 'Chat'>
 export type ChatTypes = {
   navigation: ChatScreenNavigationProp
 }
+
+export type PrincipalStackParamList = {
+  Chat: undefined
+  Perfil: undefined;
+  Home: undefined;
+  Map: undefined;
+  Test: undefined;
+  Surprise: undefined;
+  Arquivo: undefined;
+  Camera: undefined;
+  EnviarMensagem: undefined
+}
+type PrincipalScreenNavigationProp = StackNavigationProp<PrincipalStackParamList, 'Perfil'>
+
+export type PrincipalTypes = {
+  navigation: PrincipalScreenNavigationProp
+}
+  
