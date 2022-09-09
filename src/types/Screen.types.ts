@@ -31,7 +31,8 @@ export type PrincipalStackParamList = {
   Surprise: undefined;
   Arquivo: undefined;
   Camera: undefined;
-  EnviarMensagem: undefined
+  EnviarMensagem: undefined;
+  QR: undefined;
 }
 type PrincipalScreenNavigationProp = StackNavigationProp<PrincipalStackParamList, 'Perfil'>
 

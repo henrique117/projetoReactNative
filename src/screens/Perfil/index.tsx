@@ -39,7 +39,7 @@ export default function Perfil({ navigation }: PrincipalTypes) {
           <Button title="MA" type="padraoBlue" onPress={() => navigation.navigate('Map')} />
           <Button title="AR" type="padraoBlue" onPress={() => navigation.navigate('Arquivo')} />
           <Button title="EM" type="padraoBlue" onPress={() => navigation.navigate('EnviarMensagem')} />
-          <Button title="QR" type="padraoBlue" onPress={() => null} />
+          <Button title="QR" type="padraoBlue" onPress={() => navigation.navigate('QR')} />
         </View>
       </View>
     </View>
