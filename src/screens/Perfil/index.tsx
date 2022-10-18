@@ -52,7 +52,7 @@ export default function Perfil({ navigation }: PrincipalTypes) {
       </View>
       <View style={styles.generalView}>
         <View style={styles.generalViewButtons}>
-          <Button title="TE" type="padraoBlue" onPress={() => navigation.navigate('Test')} />
+          <Button title="AC" type="padraoBlue" onPress={() => navigation.navigate('Acelerometro')} />
           <Button title="VA" type="padraoBlue" onPress={() => navigation.navigate('VA')} />
           <Button title="CH" type="padraoBlue" onPress={() => navigation.navigate('Chat')} />
           <Button title="CA" type="padraoBlue" onPress={() => navigation.navigate('Camera')} />

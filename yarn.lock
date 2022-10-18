@@ -2743,10 +2743,10 @@ expo-constants@~13.0.0, expo-constants@~13.0.2:
     "@expo/config" "^6.0.6"
     uuid "^3.3.2"
 
-expo-device@^4.3.0:
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/expo-device/-/expo-device-4.3.0.tgz#a25257febe8dd18378f556ef61b5ff73ee687a6b"
-  integrity sha512-NRmsEuZVxx0EvD/dHZdng87wDgN9msfyjqp5DbNIyzvMGhxOrGtE/iEivvMyOdQpVotHGK8rBRbFKJzOtYB5lg==
+expo-device@~4.1.0:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/expo-device/-/expo-device-4.1.1.tgz#5de94144113ffb7fa0f37fa3d70e452113954c10"
+  integrity sha512-It0SGtKcvzQSf+Co6zdPdB63zZvG2/rDolB1lqswMNKj03Y7KVU41s5tcQCqNczj7tmeN3CJy7A8YhYGKdb7gA==
   dependencies:
     ua-parser-js "^0.7.19"
 
@@ -2810,7 +2810,7 @@ expo-manifests@~0.2.2:
 
 expo-media-library@~14.0.0:
   version "14.0.1"
-  resolved "https://registry.npmjs.org/expo-media-library/-/expo-media-library-14.0.1.tgz"
+  resolved "https://registry.yarnpkg.com/expo-media-library/-/expo-media-library-14.0.1.tgz#b1a2ce3699edf6b5f561d32812e608ba064ba43f"
   integrity sha512-a7NGFxZvns81y0fRZJsBROXFWKtyEMaodw+x32IPNhKLUAn+X1ggfBS8FbNpUs3bA4ZvhjFQBn59dxPfcHHxEg==
   dependencies:
     "@expo/config-plugins" "^4.0.2"
@@ -2850,6 +2850,14 @@ expo-notifications@~0.14.0:
     fs-extra "^9.1.0"
     unimodules-task-manager-interface "~7.1.0"
     uuid "^3.4.0"
+
+expo-sensors@~11.1.0:
+  version "11.1.1"
+  resolved "https://registry.yarnpkg.com/expo-sensors/-/expo-sensors-11.1.1.tgz#b150184c65af5ef645041104464e0d967aef6d6a"
+  integrity sha512-Dq1IZd/5i66o3mNem4tVNXcG4+Auy9UiV1kNjJhmNJgZ5PQxbKMV4qDQIiPcW5JOi7DTW3La6HNpekjcw7kQvQ==
+  dependencies:
+    "@expo/config-plugins" "^4.0.2"
+    invariant "^2.2.4"
 
 expo-status-bar@~1.2.0:
   version "1.2.0"
