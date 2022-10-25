@@ -1,6 +1,6 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import { PerfilScreen, HomeScreen, MapScreen, TestScreen, SurpriseScreen, CameraScreen, ArquivoScreen, EnviarMensagemScreen, ChatScreen, QrCodeScreen, VideoAudioScreen, SairScreen, AcelerometroScreen } from "../screens";
+import { PerfilScreen, HomeScreen, MapScreen, TestScreen, SurpriseScreen, CameraScreen, ArquivoScreen, EnviarMensagemScreen, ChatScreen, QrCodeScreen, VideoAudioScreen, SairScreen, AcelerometroScreen, PedometroScreen } from "../screens";
 
 const Stack = createStackNavigator();
 
@@ -20,6 +20,7 @@ export default function StackNavigation() {
         <Stack.Screen name="VA" component={VideoAudioScreen} />
         <Stack.Screen name="Sair" component={SairScreen} />
         <Stack.Screen name="Acelerometro" component={AcelerometroScreen} />
+        <Stack.Screen name="Pedometro" component={PedometroScreen} />
     </Stack.Navigator>
   );
 }
